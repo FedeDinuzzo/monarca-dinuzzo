@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Ingresa y disfruta de nuestros ULTIMOS LANZAMIENTOS ❤️ Maxima Calidad 💥 Escuchanos como nunca antes! MONARCA ROCK">
+    <meta name="keywords" content="Rock, Musica, Lanzamientos, Hits">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="referrer" content="origin">
+    <meta name="geo.region" content="ES" />
+    <meta name="geo.placename" content="Argentina" />
+    <meta name="distribution" content="global"/>
+    <meta name="rating" content="general"/>
+    <meta name="language" content="es_ES"/>
+    <title>⭐ MONARCA → Reproductor Online ≫ Escucha Rock</title>
+
+    <link rel="shortcut icon" href="assets/img/Logo-Monarca.png">
+    <link rel="stylesheet" href="assets/sass/main.css">
+
+     <!-- ===== BOXICONS ===== -->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <nav class="nav grid nav__music">
+            <div>
+                <img class="nav__logo" src="assets/img/Logo-Monarca.png" alt="">
+            </div>
+
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="./music.html" class="nav__link active">Music</a></li>
+                    <li class="nav__item"><a href="./members.html" class="nav__link">Members</a></li>
+                    <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <i class='bx bx-menu nav__toggle' id="nav__toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== MUSIC PLAYER =====-->
+    <section class="player">
+        <audio src="" id="audio"></audio>
+        
+        <div class="player__container">
+            <div class="player__box">
+                <img class="song__img" src="assets/img/cover1.png" alt="">
+                <div class="song__img"></div>
+
+            </div>
+
+            <div class="player__box">
+                <h3 class="song__title"><b>ANESTESIA</b></h3>
+                <h3 class="song__subtitle">Monarca</h3> 
+                <div class="song__slider">
+                    <input type="range" value="0" class="song__bar">
+                    <span class="current__time">00:00</span>
+                    <span class="song__duration">00:00</span>
+                </div>    
+
+                <div class="controls">
+                    <button class="btn backward"><img src="assets/img/pre.png" alt=""></button>
+                    <button class="play-btn pause">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn forward"><img src="assets/img/pre.png" alt=""></button>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

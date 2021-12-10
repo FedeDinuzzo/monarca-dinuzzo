@@ -1,0 +1,38 @@
+/* MEMBERS */
+.member__box{
+  background-color: $dark-color-light;
+  border-radius: 100px 0px 100px 0px;
+  padding: $mb-4 $mb-3;
+  text-align: center;
+  margin: $mb-4 0;
+  
+  h2{
+    font-size: 1.5rem;
+    padding: $mb-2 0 0 0;
+  }
+    
+  h3{
+    color: $first-color;
+  }
+    
+  p{
+    margin: $mb-2 $mb-3;
+  }
+    
+  img{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 80px 20px 80px 20px;
+    margin: $mb-1 0;
+  }
+}
+  
+.member__social{
+  font-size: 25px;
+  margin: 0 $mb-1;
+  background-color: $dark-color;
+  padding: $mb-1;
+  border-radius: 20px 8px 20px 8px;
+}
+  

@@ -1,0 +1,10 @@
+/* HERO */
+.hero__dark{
+  background: linear-gradient(180deg, #24242E 30%, #141417 100%);
+}
+  
+.hero__container{
+  margin-top: $header-height;
+  height: 30vh;
+  align-items: center;
+}

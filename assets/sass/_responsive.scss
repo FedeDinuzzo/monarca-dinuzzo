@@ -1,0 +1,204 @@
+@media screen and (min-width: 768px){
+    /* GENERAL */
+    body{
+      margin: 0;
+    }
+
+    /* NAV */
+    .nav{
+      height: calc($header-height + 1rem);
+      justify-content: initial;
+    }
+  
+    .nav__menu{
+      margin-left: auto;
+
+      ul{
+        display: flex;
+      }
+    
+      li{
+        margin-left: $mb-4;
+        margin-bottom: 0;
+      }
+    }
+  
+    #nav__toggle{
+      display: none;
+    }
+
+    /* HERO */
+
+    /* INDEX */
+    .home__container{
+      height: 100vh;
+    }
+    
+    .music{
+      border-radius: 240px 60px 0px 0px;
+    }
+    
+    .music__container{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 1fr;
+    }
+    
+    .music__box{
+      margin-right: $mb-3;
+
+      h2{
+        margin-top: 40%;
+      }
+    }
+    
+    .reproductor{
+      display: flex;
+      max-width: 100%;
+      max-height: 900px;
+    }
+    
+    .accordion__container{
+      min-width: 700px;
+    }
+
+    /* ABOUT */
+    .about__img{
+      margin: auto;
+    }
+    
+    .about__title{
+      text-align: center;
+      padding: $mb-1 0;
+    }
+    
+    /* MUSIC */
+    .ticket{
+      height: 300px;
+    }
+
+    /* MEMBERS */
+    .member__box{
+      margin: $mb-5;
+      border-radius: 120px 20px 120px 20px;
+    }
+
+    /* CONTACT */
+    .form__section, .form__checkbox{
+      padding: $mb-2 $mb-6;
+    }
+    
+    /* FOOTER */
+    .footer__container{
+      grid-template-columns: repeat(3,1fr);
+      padding: 2rem 0;
+    }
+  }
+    
+  @media screen and (min-width: 1024px){
+    /* GENERAL */
+    .grid{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* NAV */
+    .nav__toggle{
+      overflow: hidden;
+    }
+
+    /* HERO */
+    .hero__title{
+      font-size: 3rem;
+    }
+
+    /* INDEX */
+    .home__title{
+      font-size: 5rem;
+    }
+    
+    .accordion__section{
+      margin: $mb-6 0;
+    }
+    
+    /* ABOUT */  
+    .about{
+      border-radius: 0;
+    }
+
+    .us{
+      border-radius: 240px 60px 0px 0px;
+    }
+    
+    .about__container{
+      height: 80vh;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 1fr;
+
+      h2{
+        margin-top: 10%;
+      }
+    }
+    
+    .about__boximg{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 50%;
+    }
+
+    .history{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    /* MUSIC */
+    .player__container{
+      display: flex;
+      justify-content: center;
+      margin: $mb-3 0;
+      height: 90vh;
+      background-color: $dark-color-light;
+      border-radius: 120px 20px 10px 10px;
+      padding: $mb-4;
+    }
+    
+    .player__box{
+     width: 5000px;
+    }
+
+    .ticket{
+      padding-top: $mb-5;
+    }
+
+    /* MEMBERS */
+    .member__container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      border-radius: 120px 20px 120px 20px;
+    }
+
+    /* CONTACT*/
+    .contact__container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      
+    .contact__info{
+      border-radius: 120px 0 0 20px;
+      height: auto;
+      box-shadow: 12px 12px 16px 0px #24242EB2;
+    }
+    
+    .form{
+      border-radius: 0 20px 120px 0px;
+      box-shadow: 12px 12px 16px 0px #24242EB2;
+
+      textarea{
+        max-width: 440px;  
+        max-height: 180px; 
+      }
+    }
+}

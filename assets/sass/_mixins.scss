@@ -1,0 +1,21 @@
+/*music en Index.html - sobre nosotros, historia en About.html*/
+@mixin box (){
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+@mixin title (){
+    margin: $mb-3 0;
+    text-align: center;
+}
+
+@mixin p__box (){
+    text-align: center;
+    border-radius: 80px 20px 10px 10px;
+    background: linear-gradient(150deg, #5A5C6D -22%, #24242E 100%);
+    box-shadow: -8px -8px 12px 0px #FFFFFF1A;
+    box-shadow: 6px 6px 10px 0px #24242EB2;
+    padding: $mb-5;
+    margin: auto $mb-4;
+}

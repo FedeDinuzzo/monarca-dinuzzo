@@ -1,0 +1,143 @@
+/*===== MUSIC PLAYER ===== */  
+.nav__music{
+  background-color: $dark-color;
+}
+
+.player__container{
+  margin: $mb-6 0;
+  height: 90vh;
+  background-color: $dark-color-light;
+  border-radius: 120px 20px 10px 10px;
+  padding: $mb-4;
+}
+
+.player__box{
+  margin-top: $header-height;
+}
+
+.player__title{
+  padding-top: $mb-3;
+}
+
+.song__img{
+  display: block;
+  margin: auto;
+  background-image: url("../img/cover1.png");
+  height: auto;
+  width: 280px;
+}
+
+.player__title, .song__title, .song__subtitle{
+  text-align: center;
+}
+
+.song__slider{
+  width: 100%;
+  position: relative;
+}
+
+.song__bar{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #000000;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.song__bar::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 5px;
+  height: 10px;
+  border-radius: 4px;
+  background: #987700;
+  box-shadow: -400px 0 0 400px #E2C86B;
+}
+
+.song__duration{
+  position: absolute;
+  right: 0;
+}
+
+.controls{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: $mb-3;
+}
+
+.play-btn{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(230.62deg, #E2C86B 22.93%, #987700 82.15%);
+  cursor: pointer;
+  border: none;
+}
+
+.play-btn span{
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 26px;
+  border-radius: 3px;
+  background-color: $white-color;
+  transition: .5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play-btn span:nth-child(2){
+  left: 57%;
+  transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2){
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+  width: 35%;
+  left: 38%;
+  transform: translateY(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause{
+  animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+  0%{
+    box-shadow: 0;
+  }
+  50%{
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  100%{
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.btn{
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: $dark-color-light;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.backward{
+  transform: rotate(180deg);
+}

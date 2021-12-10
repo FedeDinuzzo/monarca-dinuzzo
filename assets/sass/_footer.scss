@@ -1,0 +1,40 @@
+/*===== FOOTER =====*/
+.footer{
+  display: grid;
+  background-color: $dark-color-light;
+  color: $white-color;
+}
+  
+.footer__container{
+  grid-row-gap: 1.5rem;
+  margin: $mb-4 0;
+}
+  
+.footer__box{
+  margin-left: $mb-6;
+
+  h3{
+    font-size: $normal-font-size;
+  }
+}
+  
+.footer__link, .footer__social{
+  color: $gray-color;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+  
+.footer__social{
+  font-size: $h2-font-size;
+  margin-right: $mb-1;
+}
+  
+.footer__copy{
+  border-top: 2px solid $gray-color;
+  padding: $mb-5;
+  text-align: center;
+  color: $gray-color;
+  font-size: $small-font-size;
+}

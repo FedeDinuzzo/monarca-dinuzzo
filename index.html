@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="desciption" content="Somos una Banda de ROCK formada en Argentina. ✅ Ingresa y Disfruta de nuestra Musica! MONARCA®">
+    <meta name="keywords" content="Musica, Rock, Monarca, Banda">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="referrer" content="origin">
+    <meta name="geo.region" content="ES" />
+    <meta name="geo.placename" content="Argentina" />
+    <meta name="distribution" content="global"/>
+    <meta name="rating" content="general"/>
+    <meta name="language" content="es_ES"/>
+    <title>⚡ Monarca 【Banda de Rock】</title>
+    
+    <link rel="shortcut icon" href="assets/img/Logo-Monarca.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+    
+    <!-- ===== BOXICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <nav class="nav grid">
+            <div>
+                <img class="nav__logo" src="assets/img/Logo-Monarca.png" alt="">
+            </div>
+
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="./music.html" class="nav__link">Music</a></li>
+                    <li class="nav__item"><a href="./members.html" class="nav__link">Members</a></li>
+                    <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <i class='bx bx-menu nav__toggle' id="nav__toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== HERO =====-->
+    <section class="home" id="inicio">
+        <div class="home__container">
+            <canvas class="scene scene__full" id="scene"></canvas>
+            <h1 class="home__title">MONARCA</h1>
+        </div>
+    </section>
+
+    <!--===== MUSIC =====-->
+    <section class="music">
+        <div class="music__container grid">
+            
+            <div class="music__box">
+                <h2 class="music__title">ANESTESIA</h2>
+                <h3 class="music__subtitle">Ultimo lanzamiento</h3>
+                <p class="music__p">Anestesia es la canción emblema y más representativa de la banda. Los cambios de dinámica la hacen una canción <b>intensa y festiva</b> de rock siendo el primer adelanto del próximo <b>EP.</b> que contendrá 4 canciónes.</p>
+                <div class="button bnr"><a class="music__link" href="music.html">Musica</a></div>
+            </div>
+            
+            <div class="music__box">
+                <img src="assets/img/Reproductor.png" alt="" class="reproductor">
+            </div>
+        </div>
+    </section>
+
+    <!--===== NEWSLETTER =====-->
+    <section class="newsletter">
+        <div class="newsletter__bg">
+            <div class="newsletter__container grid">
+                <div class="newsletter__suscribe">
+                    <h2 class="newsletter__title">Newsletter</h2>
+                    <p class="newsletter__p">Enterate cuando sacamos nuevos Temas/Albums y las Proximas Fechas</p>
+                    
+                    <form action="" class="newsletter__form">
+                        <input class="newsletter__input" type="email" value="Ingresa tu email">
+                        <a href="#" class="button">Suscribirme</a>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </section>
+        
+    <!--===== ACCORDION =====-->
+    <section class="accordion__section">
+    <div class="accordion__container">
+        <h2 class="accordion__title">Proximas Fechas</h2>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              26/11/2021
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Una noche especial! Revelaremos el mejor tema de nuestro proximo Album y Tenes que ser parte. <i>Contactanos para Obtener tus Entradas - <b>Zona Oeste</b></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                18/01/2022
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Disfruta junto a nosotros de un increible Show en el cual se realizara la Presentación Oficial del 1er Album de Monarca. <i>Contactanos para Obtener tus Entradas - <b>Capital Federal</b></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                07/03/2022
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Te esperamos con una promo 2x1 para que disfrutes lo mejor del Rock. Escucha AC/DC by Monarca. <i>Contactanos para Obtener tus Entradas - <b>Zona Sur</b></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container grid">
+            
+            <div class="footer__box">
+                <h3 class="footer__title">REDES SOCIALES</h3>
+                    <a href="https://www.instagram.com/monarca.oficial/" class="footer__social" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/channel/UCujFMa95N3Ddk13MyU2hGCw" class="footer__social" target="_blank"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://open.spotify.com/user/31dafnwobjp6okehs4d4sps6vani?si=0c44a0a67afb4678" class="footer__social" target="_blank"><i class='bx bxl-spotify'></i></a>
+            </div>
+    
+            <div class="footer__box">
+                <h3 class="footer__title">EXPLORAR</h3>
+                <ul>
+                    <li><a href="./index.html" class="footer__link">Inicio</a></li>
+                    <li><a href="./about.html" class="footer__link">Sobre Nosotros</a></li>
+                    <li><a href="./music.html" class="footer__link">Musica</a></li>
+                    <li><a href="./members.html" class="footer__link">Integrantes</a></li>
+                    <li><a href="./contact.html" class="footer__link">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__box">
+                <h3 class="footer__title">CONTACTO</h3>
+                <ul>
+                    <li><a href="https://wa.me/+5491130391123" class="footer__link" target="_blank">Whatsapp</a></li>
+                    <li><a href="mailto:contacto@monarca.ar" class="footer__link" target="_blank">Email</a></li>
+                    <li><a href="https://www.google.com.ar/maps/place/Buenos+Aires,+CABA/@-34.6158237,-58.4332984,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591" class="footer__link" target="_blank">Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy">&#169 2021 Copyright - <b>Monarca</b></div>
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/perlin.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+</html>

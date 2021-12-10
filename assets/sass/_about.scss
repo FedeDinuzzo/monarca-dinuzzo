@@ -1,0 +1,51 @@
+/* ABOUT */
+.about{
+  background-color: $gray-color;
+  padding: $mb-6 0;
+}
+
+.us{
+  border-radius: 100px 10px 0px 0px;
+}
+  
+.about__box{
+  @include box;
+
+  h3{
+    @include title;
+  }
+    
+  p{
+    @include p__box;
+  }
+
+  .about__img{
+    display: flex;
+    margin: $mb-3 0;
+  }
+}
+  
+.bnr{
+  margin: -1rem auto;
+  max-width: 200px;
+
+  a{
+    color: $white-color;
+  }
+}
+
+.ticket{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: $mb-3;
+  padding-left: $mb-1;
+  background-color:#d6d6d8;
+  height: 272px;
+
+  img{
+    display: block;
+    margin: auto;
+  }
+}
+
