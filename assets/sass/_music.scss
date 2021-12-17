@@ -43,12 +43,13 @@
   margin-bottom: $mb-1;
 }
 
-.song__img{
+.disk{
+  background-image: url('https://www.cjoint.com/doc/21_12/KLrdJqZA5Oy_cover1.png');
   display: block;
   margin: auto;
-  background-image: url("../img/cover1.png");
-  width: auto;
-  max-width: 320px;
+  width: 320px;
+  height: 300px;
+  background-size: cover;
 }
 
 .sub__controls {

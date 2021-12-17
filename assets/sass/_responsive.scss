@@ -80,7 +80,7 @@
       border-radius: 200px 40px 0 0;
     }
 
-    .song__img{
+    .disk{
       margin-top: $mb-3;
     }
 
@@ -189,8 +189,9 @@
       padding: 0 $mb-6;
     }
 
-    .song__img{
-      max-width: 440px;
+    .disk{
+      height: 415px;
+      width: 440px;
     }
 
     .controls{

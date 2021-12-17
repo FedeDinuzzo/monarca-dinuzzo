@@ -6,7 +6,7 @@ const seekBar = document.querySelector('.song__bar');
 const songName = document.querySelector('.song__title');
 const artistName = document.querySelector('.song__subtitle');
 const lyrcsLetter = document.querySelector('.lyrcs__p');
-const disk = document.querySelector('.song__img');
+const disk = document.querySelector('.disk');
 const currentTime = document.querySelector('.current__time');
 const musicDuration = document.querySelector('.song__duration');
 const playBtn = document.querySelector('.play-btn');
@@ -35,7 +35,6 @@ const setMusic = (i) => {
     artistName.innerHTML = song.artist;
     lyrcsLetter.innerHTML = song.letter;
     disk.style.backgroundImage = `url('${song.cover}')`;
-
 
     currentTime.innerHTML = '00:00';
     setTimeout(() => {
