@@ -25,13 +25,13 @@
 </head>
 <body>
     <!--===== HEADER =====-->
-    <header class="header">
+    <header class="header nav__music">
         <nav class="nav grid nav__music">
             <div>
                 <img class="nav__logo" src="assets/img/Logo-Monarca.png" alt="">
             </div>
 
-            <div class="nav__menu" id="nav__menu">
+            <div class="nav__menu nav__music" id="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="./about.html" class="nav__link">About</a></li>
@@ -52,30 +52,50 @@
         <audio src="" id="audio"></audio>
         
         <div class="player__container">
-            <div class="player__box">
-                <img class="song__img" src="assets/img/cover1.png" alt="">
-                <div class="song__img"></div>
+            <div class="player__box player__box1">
+                <div class="player__img">
+                    <div class="song__img"></div>
+                </div>
 
-            </div>
+                <div class="player__subbox">
+                    <h3 class="song__title"></h3>
+                    <h4 class="song__subtitle"></h4> 
+                    <div class="sub__controls"></div>
+                    <div class="song__slider">
+                        <input type="range" value="0" class="song__bar">
+                        <span class="current__time">00:00</span>
+                        <span class="song__duration">00:00</span>
+                    </div>    
 
-            <div class="player__box">
-                <h3 class="song__title"><b>ANESTESIA</b></h3>
-                <h3 class="song__subtitle">Monarca</h3> 
-                <div class="song__slider">
-                    <input type="range" value="0" class="song__bar">
-                    <span class="current__time">00:00</span>
-                    <span class="song__duration">00:00</span>
-                </div>    
-
-                <div class="controls">
-                    <button class="btn backward"><img src="assets/img/pre.png" alt=""></button>
-                    <button class="play-btn pause">
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn forward"><img src="assets/img/pre.png" alt=""></button>
+                    <div class="controls">
+                        <button class="btn repeat"><img src="assets/img/repeat.png" alt=""></button>
+                        <button class="btn backward"><img src="assets/img/pre.png" alt=""></button>
+                        <button class="play-btn pause">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="btn forward"><img src="assets/img/pre.png" alt=""></button>
+                        <button class="btn fav"><img src="assets/img/playlist.png" alt=""></button>
+                    </div>
                 </div>
             </div>   
+
+            <!--===== LYRCS =====-->
+            <div class="player__box">                    
+                <div class="letter">
+                    <div class="lyrcs">
+                        <div class="lyrcs__box">
+                            <div class="lyrcs__menu" id="lyrcs__menu">
+                                <h2 class="lyrcs__title">Letra</h2>
+                                <p class="lyrcs__p"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="lyrcs__icon" id="lyrcs__icon"><img src="assets/img/lyrcs.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -83,5 +103,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/data.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/lyrcs.js"></script>
 </body>
 </html>
